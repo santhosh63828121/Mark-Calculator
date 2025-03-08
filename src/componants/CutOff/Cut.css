@@ -10,6 +10,24 @@
     text-align: center;
     color: white;
   }
+
+  .clear-btn {
+    background: #ff4444;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.clear-btn:hover {
+    background: #cc0000;
+}
+
   
   /* 🎓 Headings */
   h1 {

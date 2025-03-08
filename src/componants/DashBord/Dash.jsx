@@ -23,6 +23,10 @@ function Dash() {
           See Your 10th Mark Percentage → Click Now
         </button>
       </div>
+      <footer>
+    <p>© 2024 Created by <strong>Santhosh D</strong>. All rights reserved.</p>
+</footer>
+
     </div>
   );
 }

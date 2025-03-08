@@ -45,6 +45,12 @@ function App() {
     }
   };
 
+  const clearFields = () => {
+    setMarks({ maths: "", physics: "", chemistry: "", biology: "" });
+    setCutoff(null);
+    setShowConfetti(false);
+  };
+
   return (
     <div className="home-container">
       {showConfetti && <Confetti />}
@@ -58,6 +64,7 @@ function App() {
         <input name="chemistry" type="number" placeholder="Chemistry" value={marks.chemistry} onChange={handleChange} />
         <input name="biology" type="number" placeholder="Biology (For Medical)" value={marks.biology} onChange={handleChange} />
         <button onClick={calculateCutoff}>Calculate</button>
+        {cutoff && <button className="clear-btn" onClick={clearFields}>Clear</button>}
       </div>
 
       {cutoff && (

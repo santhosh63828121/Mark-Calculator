@@ -9,13 +9,13 @@ function App() {
     maths: "",
     physics: "",
     chemistry: "",
-    elective: "", // Biology / Computer Science / Commerce / Economics
+    elective: "",
   });
 
   const [result, setResult] = useState(null);
   const [windowSize, setWindowSize] = useState({ width: window.innerWidth, height: window.innerHeight });
 
-  // Handle window resize for Confetti animation
+  
   useEffect(() => {
     const handleResize = () => {
       setWindowSize({ width: window.innerWidth, height: window.innerHeight });
@@ -42,6 +42,19 @@ function App() {
     });
   };
 
+ 
+  const clearFields = () => {
+    setMarks({
+      tamil: "",
+      english: "",
+      maths: "",
+      physics: "",
+      chemistry: "",
+      elective: "",
+    });
+    setResult(null);
+  };
+
   return (
     <div className="over-home">
       {result?.status === "Pass" && (
@@ -53,7 +66,7 @@ function App() {
         <h2>📊 TN Board 12th Mark Percentage Calculator</h2>
 
         <div className="form">
-        {["tamil", "english", "maths", "physics", "chemistry", "elective"].map((subject) => (
+          {["tamil", "english", "maths", "physics", "chemistry", "elective"].map((subject) => (
             <input
               key={subject}
               name={subject}
@@ -66,6 +79,7 @@ function App() {
             />
           ))}
           <button onClick={calculatePercentage}>Calculate</button>
+          {result && <button className="clear-btn" onClick={clearFields}>Clear</button>}
         </div>
 
         {result && (
