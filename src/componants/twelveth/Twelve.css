@@ -1,0 +1,153 @@
+.over1 {
+    display: flex;
+    flex-direction: column;
+  text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+
+    margin: 0;
+    padding: 0;
+   
+    top: 0;
+    left: 0;
+  }
+  
+  .container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 22px;
+  }
+  
+  .form input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    background: #0A5D00;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #097200;
+  }
+  
+  .result {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .result h3 {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  
+  .result span {
+    font-weight: bold;
+  }
+  
+  .pass {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .fail {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* =========================== */
+  /* 📱 Responsive Media Queries */
+  /* =========================== */
+  
+  /* Small Devices (Phones) */
+  @media screen and (max-width: 480px) {
+    .container {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .form input {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .result h3 {
+      font-size: 16px;
+    }
+  }
+  
+  /* Medium Devices (Tablets) */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+      width: 80%;
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 22px;
+    }
+  
+    .form input {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .result h3 {
+      font-size: 18px;
+    }
+  }
+  
+  /* Large Devices (Laptops & Desktops) */
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+    .container {
+      width: 400px;
+      padding: 25px;
+    }
+  }
+  
+  /* Extra Large Screens */
+  @media screen and (min-width: 1201px) {
+    .container {
+      width: 450px;
+      padding: 30px;
+    }
+  }
+  

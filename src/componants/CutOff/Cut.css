@@ -1,0 +1,86 @@
+/* 🌟 Full Page Styling */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+  }
+  
+  /* 🎓 Headings */
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* 📋 Form */
+  .form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+  }
+  
+  .form input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* 🚀 Button */
+  button {
+    background: #ff9800;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    width: 100%;
+  }
+  
+  button:hover {
+    background: #e68900;
+    transform: scale(1.05);
+  }
+  
+  /* 🏆 Result */
+  .result {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .result h3 {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  
+  .result span {
+    font-weight: bold;
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 480px) {
+    .form {
+      width: 90%;
+    }
+  }
+  
